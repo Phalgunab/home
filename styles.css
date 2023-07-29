@@ -6,6 +6,13 @@ html, body{
   background-color: black;
 }
 
+body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .homelinks{
   display: inline-block;
   position: absolute;
@@ -16,6 +23,10 @@ html, body{
 }
 .homelinks a{
   margin: 1%;
+}
+
+.homelinks a img:hover{
+  transform: scale(1.2);
 }
 
 .homelinks a img{
@@ -39,7 +50,11 @@ html, body{
   position: relative;
 }
 
-.homegreeting{
+.pic img:hover{
+  filter: box-shadow(10px 10px 100px white );
+}
+
+.home .homegreeting{
   color: white;
   display: inline-block;
   position: absolute;
@@ -49,4 +64,10 @@ html, body{
   z-index: 1;
   font-family: 'Courier New', Courier, monospace;
   font-size: 4rem;
+}
+
+.workexp .header{
+  text-align: center;
+  color: white;
+  font-size: 3rem;
 }
