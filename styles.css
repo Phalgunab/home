@@ -4,6 +4,7 @@ html, body{
   padding: 0px;
   min-height: 100%;
   background-color: black;
+  color: white;
 }
 
 body{
@@ -82,6 +83,47 @@ body{
   font-size: 3rem;
 }
 
+.about{
+  display: inline-block;
+  position: absolute;
+  left: 0%;
+  top: 120%;
+  width: 50%;
+  overflow: hidden;
+}
+
+.about img{
+  width: 60%;
+  height: 60%;
+  position: relative;
+  transition: 1s ease;
+}
+
+.about img:hover{
+  transform: scale(1.1);
+}
+
+.info{
+  display: inline-block;
+  position: absolute;
+  right: 0%;
+  top: 120%;
+  width: 50%;
+  overflow: hidden;
+}
+
+.info h1{
+  color: white;
+}
+
+.info img{
+  width: 10%;
+  margin: 5px;
+  transition: 1s ease;
+  border-radius: 50%;
+}
+
+
 @media all and (max-width: 500px) {
   .home .homegreeting{
     color: white;
@@ -133,6 +175,46 @@ body{
     z-index: 1;
     font-family: 'Courier New', Courier, monospace;
     font-size:2rem;
+  } 
+  
+  .homelinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 50%;
+    z-index: 1;
+  }
+
+  .homelinks a img{
+    width: 25%;
+    margin: 5px;
+    transition: 1s ease;
+    border-radius: 50%;
+  }
+
+  .pic{
+    display: inline-block;
+    position: absolute;
+    bottom: 0%;
+    top: 30%;
+    width: 150%;
+    overflow: hidden;
+  }
+}
+
+@media all and (max-width: 330px){
+  .home .homegreeting{
+    color: white;
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+    width: 50%;
+    z-index: 1;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:1.5rem;
   } 
   
   .homelinks{
