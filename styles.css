@@ -42,28 +42,38 @@ body{
   right: 0%;
   top: 8%;
   width: 50%;
+  overflow: hidden;
 }
 
 .pic img{
   width: 100%;
   height: 100%;
   position: relative;
+  transition: 1s ease;
 }
 
 .pic img:hover{
-  filter: box-shadow(10px 10px 100px white );
+  transform: scale(1.1);
 }
+
 
 .home .homegreeting{
   color: white;
   display: inline-block;
   position: absolute;
-  left: 15%;
+  left: 10%;
   top: 20%;
-  width: 70%;
+  width: 60%;
   z-index: 1;
   font-family: 'Courier New', Courier, monospace;
   font-size: 4rem;
+}
+
+.homegreeting .fullname{
+  transition: 1s ease;
+}
+.homegreeting .fullname:hover{
+  text-shadow: 10px 10px 100px white;
 }
 
 .workexp .header{
