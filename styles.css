@@ -81,3 +81,44 @@ body{
   color: white;
   font-size: 3rem;
 }
+
+@media screen and (max-width: 390px) {
+  .home .homegreeting{
+    color: white;
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    width: 60%;
+    z-index: 1;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+  } 
+  
+  .homelinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .homelinks a img{
+    width: 15%;
+    margin: 5px;
+    transition: 1s ease;
+    border-radius: 50%;
+  }
+
+  .pic{
+    display: inline-block;
+    position: absolute;
+    bottom: 0%;
+    top: 50%;
+    width: 100%;
+    overflow: hidden;
+  }
+}
